@@ -1,0 +1,11 @@
+<p style="text-align: center; font-weight: bold; font-size: 24px; font-family: 'Open Sans';">Approvals Page</p>
+
+<div *ngFor="let item of req">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ item }}</h5>
+            <button (click)="approveItem(item)">Approve</button>
+            <button (click)="rejectItem(item)">Reject</button>
+        </div>
+    </div>
+</div>

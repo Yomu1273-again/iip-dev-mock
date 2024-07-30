@@ -1,0 +1,11 @@
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 2%;">
+    @if (currentRole=="user") {
+        <modus-button color="primary" (click)="adminReq()" style="margin: 10px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); width: 50%;">Request Admin Access</modus-button>
+    } @else if (currentRole=="admin") {
+        <modus-button color="primary" (click)="gotoApproval()" style="margin: 10px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); width: 50%;">Goto Approvals</modus-button>
+        <modus-button color="primary" (click)="displayAllUsers()" style="margin: 10px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); width: 50%;">Display All Users</modus-button>
+    }
+    <div *ngFor="let user of userArray" style="margin-top: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 30%;">
+        <strong>Name:</strong> {{ user.name }} <br><strong>Role:</strong> {{ user.role }}
+    </div>
+</div>

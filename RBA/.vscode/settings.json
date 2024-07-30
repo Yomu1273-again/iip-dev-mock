@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/defc8ad1-83df-4382-835c-0931e20ea981/resourceGroups/iip-dev-mock-web-app_group/providers/Microsoft.Web/sites/iip-dev-mock-web-app",
+    "appService.deploySubpath": "rba\\dist\\rba"
+}
