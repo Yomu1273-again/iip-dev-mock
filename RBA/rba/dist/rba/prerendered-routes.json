@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/approval",
+    "/dashboard",
+    "/invoice",
+    "/login"
+  ]
+}
